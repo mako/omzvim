@@ -1,0 +1,58 @@
+# My aliases
+
+# Pushing keys to remote
+# Use: push-key zoltan@domain.tld
+function push-key {
+ ssh $1 "echo '`cat ~/.ssh/id_rsa.pub`' >> ~/.ssh/authorized_keys"
+}
+
+# Find and replace in a file
+# Use: fr old_url new_url filename
+function fr {
+ sed -ie 's/$1/$2/g' $3
+}
+
+# For Bedrock-Ansible deployments
+# Use: ansible:deploy environment sitename
+function ansible:deploy {
+ ./deploy.sh $1 $2
+}
+
+# For when in a trellis / bedrock project
+alias owp="tab trellis && tab site && tab site/web/app/themes"
+
+# Simple http server in Python
+alias pysrv="python -m SimpleHTTPServer 8000"
+
+# Simple PHP server 
+alias phpsrv="php -S localhost:8000"
+
+# GIT ------------------------------
+alias gs="git status"
+alias gt="gittower ."
+
+# Ruby / Rails / software ----------
+alias rs="rails server"
+alias bu="bundle"
+alias ctl="cap tail_logs"
+alias mm="middleman"
+alias sub="sublime ."
+alias atom="atom ."
+
+# Jumping --------------------------
+go() { cd ~/Projects/$1; }
+_go() { _files -W ~/Projects -/; }
+compdef _go go make
+
+# Composer / PHP
+alias composer="php /usr/bin/composer.phar"
+
+# Browser launchers / helpers
+alias pma="open http://localhost/phpMyAdmin"
+
+# Misc
+alias flushdns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
+
+# Speedtest Internet connection
+alias speedtest='curl -o /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip'
+
