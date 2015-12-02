@@ -29,4 +29,4 @@ sh -c "$(curl -fsSL https://raw.github.com/mako/omzvim/master/tools/install.sh)"
 
 ``shell
 sh -c "$(wget https://raw.github.com/mako/omzvim/master/tools/install.sh -O -)"
-```
+``
