@@ -2,7 +2,7 @@
 
 if [ ! -d "$HOME/.omzvim" ]; then
     echo "Installing Oh-My-ZSH with YADR-Vim for the first time"
-    git clone --depth=1 https://github.com/mako/dotfiles.git "$HOME/.omzvim"
+    git clone --depth=1 https://github.com/mako/omzvim.git "$HOME/.omzvim"
     cd "$HOME/.omzvim"
     [ "$1" = "ask" ] && export ASK="true"
     rake install
