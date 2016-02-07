@@ -1,7 +1,7 @@
 # My aliases
 
 # Pushing keys to remote
-# Use: push-key zoltan@domain.tld
+# Use: push-key deployer@domain.tld
 function push-key {
  ssh $1 "echo '`cat ~/.ssh/id_rsa.pub`' >> ~/.ssh/authorized_keys"
 }
