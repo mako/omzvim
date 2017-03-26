@@ -32,6 +32,7 @@ $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/mako/omzvim/master/insta
 $ sh -c "$(wget https://raw.githubusercontent.com/mako/omzvim/master/install.sh -O -)"
 ``
 #### post install
+
 ``
 $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
