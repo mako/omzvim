@@ -23,11 +23,15 @@ Oh-My-ZSH with YADR-Vim is installed by running one of the following commands in
 #### via curl
 
 ``
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/mako/omzvim/master/install.sh)"
+$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/mako/omzvim/master/install.sh)"
 ``
 
 #### via wget
 
 ``
-sh -c "$(wget https://raw.githubusercontent.com/mako/omzvim/master/install.sh -O -)"
+$ sh -c "$(wget https://raw.githubusercontent.com/mako/omzvim/master/install.sh -O -)"
+``
+#### post install
+``
+$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ``
