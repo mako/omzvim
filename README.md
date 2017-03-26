@@ -34,5 +34,6 @@ $ sh -c "$(wget https://raw.githubusercontent.com/mako/omzvim/master/install.sh 
 #### post install
 ``
 $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 $ vim +PluginInstall +qall
 ``
